@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio STAGE3</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>MENTORIA</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+
+      <form id="my-form">
+        <fieldset>
+          <legend>INFORMAÇÕES PESSOAIS</legend>
+
+          <section>
+            <div class="full-name">
+              <div class="div-wrapper">
+                <label for="personal-name">Nome</label>
+                <input type="text" id="personal-name" required />
+              </div>
+
+              <div class="div-wrapper">
+                <label for="personal-surname">Sobrenome</label>
+                <input type="text" id="personal-surname" required />
+              </div>
+            </div>
+
+            <div class="div-wrapper">
+              <label for="personal-email">
+                E-mail
+                <span>(digite um email válido)</span>
+              </label>
+              <input type="email" id="personal-email" required />
+            </div>
+
+            <div class="div-wrapper">
+              <label for="personal-password">
+                Senha
+                <span>(mínimo de 6 caracteres)</span>
+              </label>
+              <input
+                type="password"
+                id="personal-password"
+                minlength="6"
+                required
+              />
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <legend>INFORMAÇÕES DO MENTOR</legend>
+
+          <section>
+            <div class="div-wrapper">
+              <label for="mentor-name">
+                Nome do seu mentor
+                <span>(só o primeiro nome)</span>
+              </label>
+              <input type="text" id="mentor-name" required />
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+
+          <section>
+            <div class="date">
+              <div class="div-wrapper">
+                <h2>PRIMEIRA MENTORIA</h2>
+                <label for="first-date">
+                  Data
+                  <span>(DD/MM/AA)</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-date"
+                  onfocus="(this.type='date')"
+                  onfocusout="(this.type='text')"
+                  required
+                />
+              </div>
+
+              <div class="div-wrapper">
+                <label for="first-begin"> Das </label>
+                <input
+                  type="text"
+                  id="first-begin"
+                  onfocus="(this.type='time')"
+                  onfocusout="(this.type='text')"
+                  required
+                />
+              </div>
+
+              <div class="div-wrapper">
+                <label for="first-end"> Até </label>
+                <input
+                  type="text"
+                  id="first-end"
+                  onfocus="(this.type='time')"
+                  onfocusout="(this.type='text')"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="date">
+              <div class="div-wrapper">
+                <h2>SEGUNDA MENTORIA</h2>
+                <label for="second-date">
+                  Data
+                  <span>(DD/MM/AA)</span>
+                </label>
+                <input
+                  type="text"
+                  id="second-date"
+                  onfocus="(this.type='date')"
+                  onfocusout="(this.type='text')"
+                  required
+                />
+              </div>
+
+              <div class="div-wrapper">
+                <label for="second-begin"> Das </label>
+                <input
+                  type="text"
+                  id="second-begin"
+                  onfocus="(this.type='time')"
+                  onfocusout="(this.type='text')"
+                  required
+                />
+              </div>
+
+              <div class="div-wrapper">
+                <label for="second-end"> Até </label>
+                <input
+                  type="text"
+                  id="second-end"
+                  onfocus="(this.type='time')"
+                  onfocusout="(this.type='text')"
+                  required
+                />
+              </div>
+            </div>
+          </section>
+        </fieldset>
+      </form>
+      <footer>
+        <input type="submit" class="button" form="my-form" value="SALVAR" />
+      </footer>
+    </div>
+  </body>
+</html>
